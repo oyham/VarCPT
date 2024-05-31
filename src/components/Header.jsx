@@ -1,31 +1,87 @@
-import React from 'react'
+import { Link } from "wouter";
+import NavData from "./NavData"
+import useShowMenu from '../hooks/useShowMenu.jsx'
 
 const Header = () => {
+    const { showMenu, toggleMenu } = useShowMenu()
     return (
-        <header>
-            <div className="header__main">
-                <div className="header__main-logo">
-                    <a href="#" className="header__a-logo">
-                        <picture>
-                            <img src="" alt="" className="img__logo" />
-                        </picture>
-                    </a>
-                </div>
+        <header className="header">
+            <nav className='nav container'>
                 <div className="header__tool">
-                    <div className="header__tool-item"></div>
-                    <div className="header__tool-toogle">
-                        <button className="header__btn">X</button>
-                    </div>
+                    <NavData showMenu={showMenu} toggleMenu={toggleMenu} />
                 </div>
-            </div>
-            <nav className="header__nav">
-                <ul className='header__nav-ul'>
-                    <li>Li's</li>
-                    <li>Li's</li>
-                    <li>Li's</li>
-                </ul>
+                <div className={`nav__menu ${showMenu ? "show-menu" : ""}`}>
+                    <ul className="nav__list">
+                        <li className="nav-item link__acc">
+                            <Link
+                                href="/"
+                                className="section__proyects nav__link"
+                                onClick={toggleMenu}
+                            >
+                                Mi Cuenta
+                            </Link>
+                            <Link
+                                href="/"
+                                className="section__proyects nav__link login__link"
+                                onClick={toggleMenu}
+                            >
+                                Iniciar sesión
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                href="/"
+                                className="section__proyects nav__link"
+                                onClick={toggleMenu}
+                            >
+                                Mis favoritos
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                href="/"
+                                className="section__proyects nav__link"
+                                onClick={toggleMenu}
+                            >
+                                <span>Origen</span>
+                                <span>Barcelona</span>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <ul>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="section__proyects nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        Hoteles
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="section__proyects nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        Vuelos
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="section__proyects nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        Cruceros
+                                    </Link>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </header>
+        </header >
     )
 }
 

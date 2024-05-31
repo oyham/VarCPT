@@ -1,0 +1,57 @@
+.nav__data {
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav__logo {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 3.5rem;
+}
+
+.nav__logo i {
+    font-size: 1.25rem;
+}
+
+.nav__logo:hover {
+    color: var(--first-color);
+}
+
+.nav__title {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav__toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    justify-self: flex-end;
+}
+
+.nav__toggle-menu,
+.nav__toggle-close {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    position: absolute;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+}
+
+.nav__toggle-close {
+    opacity: 0;
+}
+
+@media screen and (min-width: 1118px) {
+    .nav__data{
+        height: 5.5rem;
+    }
+
+}
