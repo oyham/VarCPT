@@ -35,6 +35,7 @@ img {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 a,
@@ -93,8 +94,18 @@ ol {
   align-items: start;
   margin-top: -2rem;
 }
+
+.nav__place-link i{
+  display: none;
+}
+
 .link__acc{
-  border: 2px solid red;
+  border: 1px solid red;
+}
+
+.login__link {
+ background-color: #555;
+ width: 100%;
 }
 
 /* NAV */
@@ -327,6 +338,25 @@ ol {
   }
 
   .login__link {
+    display: none;
+  }
+
+  .nav__place{
+    position: absolute;
+    top: 3rem;
+    right: 10rem;
+    color: #000;
+  }
+
+  .nav__place-link span:nth-child(2){
+    display: none;
+  }
+
+  .nav__place-link i{
+    display: block;
+  }
+
+  .nav__link-fav{
     display: none;
   }
 

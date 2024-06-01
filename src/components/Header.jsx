@@ -15,14 +15,14 @@ const Header = () => {
                         <li className="nav-item link__acc">
                             <Link
                                 href="/"
-                                className="section__proyects nav__link"
+                                className="nav__link"
                                 onClick={toggleMenu}
                             >
                                 Mi Cuenta
                             </Link>
                             <Link
                                 href="/"
-                                className="section__proyects nav__link login__link"
+                                className="nav__link login__link"
                                 onClick={toggleMenu}
                             >
                                 Iniciar sesión
@@ -32,20 +32,22 @@ const Header = () => {
                         <li className="nav-item">
                             <Link
                                 href="/"
-                                className="section__proyects nav__link"
+                                className="nav__link nav__link-fav"
                                 onClick={toggleMenu}
                             >
+                                <i className="ri-heart-fill"></i>
                                 Mis favoritos
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item nav__place">
                             <Link
                                 href="/"
-                                className="section__proyects nav__link nav__place"
+                                className="nav__link nav__place-link"
                                 onClick={toggleMenu}
                             >
-                                <a href="/">Origen</a>
-                                <a href="/">Barcelona</a>
+                                <i className="ri-map-pin-line"></i>
+                                <span href="/">Origen</span>
+                                <span href="/">Barcelona</span>
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -53,27 +55,30 @@ const Header = () => {
                                 <li>
                                     <Link
                                         href="/"
-                                        className="section__proyects nav__link"
+                                        className="nav__link"
                                         onClick={toggleMenu}
                                     >
+                                        <i className="ri-arrow-right-s-fill"></i>
                                         Hoteles
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         href="/"
-                                        className="section__proyects nav__link"
+                                        className="nav__link"
                                         onClick={toggleMenu}
                                     >
-                                        Vuelos
+                                        <i className="ri-arrow-right-s-fill"></i>
+                                        Vuelo + Hotel
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         href="/"
-                                        className="section__proyects nav__link"
+                                        className="nav__link"
                                         onClick={toggleMenu}
                                     >
+                                        <i className="ri-arrow-right-s-fill"></i>
                                         Cruceros
                                     </Link>
                                 </li>
