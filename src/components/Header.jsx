@@ -6,7 +6,7 @@ const Header = () => {
     const { showMenu, toggleMenu } = useShowMenu()
     return (
         <header className="header">
-            <nav className='nav container'>
+            <nav className='nav'>
                 <div className="header__tool">
                     <NavData showMenu={showMenu} toggleMenu={toggleMenu} />
                 </div>
@@ -28,6 +28,7 @@ const Header = () => {
                                 Iniciar sesión
                             </Link>
                         </li>
+
                         <li className="nav-item">
                             <Link
                                 href="/"
@@ -40,15 +41,15 @@ const Header = () => {
                         <li className="nav-item">
                             <Link
                                 href="/"
-                                className="section__proyects nav__link"
+                                className="section__proyects nav__link nav__place"
                                 onClick={toggleMenu}
                             >
-                                <span>Origen</span>
-                                <span>Barcelona</span>
+                                <a href="/">Origen</a>
+                                <a href="/">Barcelona</a>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <ul>
+                            <ul className="nav__ul">
                                 <li>
                                     <Link
                                         href="/"
