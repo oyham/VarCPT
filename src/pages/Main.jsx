@@ -1,10 +1,10 @@
-import React from 'react'
-
+import mainIMG from '/mainIMG.jpg'
 const Main = () => {
   return (
     <main>
-      <h1>Main</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolorum delectus voluptates qui nemo voluptatem, natus quam nulla consequuntur, obcaecati, dicta repellat fugiat. Quisquam voluptate, ullam itaque beatae sint alias?</p>
+      <picture className='main__picture'>
+        <img src={mainIMG} alt="main img" className='main__img'/>
+      </picture>
     </main>
   )
 }
