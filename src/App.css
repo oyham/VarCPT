@@ -48,6 +48,10 @@ h1 {
   margin-bottom: 0.1rem;
 }
 
+.mct{
+  color: #f3c50e;
+}
+
 .main__img-container {
   padding-top: 4rem;
 }
@@ -157,11 +161,11 @@ ol {
     margin-top: 3.5rem;
   }
 
+  /* top: 2.5rem; */
   .nav__menu {
     background-color: var(--main-color);
     position: absolute;
     left: 0;
-    /* top: 2.5rem; */
     top: -1.5rem;
     width: 100%;
     overflow: auto;
@@ -269,11 +273,24 @@ ol {
 }
 
 /* CARDS */
+.discover__title{
+  margin: 4rem 3rem 0;
+}
+
 .cards__container {
   margin: 1rem 2rem;
 }
 
+.warning__container{
+  background-color: #f3c50e;
+  margin: 0 2rem;
+  text-align: start;
+  padding: .5rem;
+}
 
+.warning__container b{
+  font-size: 1.5rem;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -300,6 +317,7 @@ ol {
   .section {
     padding-top: 3rem;
     padding-bottom: 2rem;
+    
   }
 
   .section-title {
@@ -318,7 +336,7 @@ ol {
 }
 
 /* For large devices */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 1024px) {
   h1 {
     padding-top: 1rem;
   }
@@ -389,6 +407,14 @@ ol {
     gap: 20px; /* Espacio entre las tarjetas */
     margin: 0 6rem;
   }
+
+  .warning__container{
+    margin: 0 4rem;
+
+  }
+
+
+  
 
   /* Nav */
   .nav {

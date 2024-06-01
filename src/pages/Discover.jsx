@@ -4,10 +4,11 @@ import DiscoverCards from '../components/DiscoverCards'
 const Discover = () => {
     return (
         <section className='section'>
-            <h2>
+            <h2 className='discover__title'>
                 Descubre naturaleza, cultura, arte, delicias culinarias y hospitalidad en la ruta vacacional
-                más antigua y popular de Alemania de
-                Würzburg a Füssen
+                más antigua y popular de Alemania de <br />
+                <span className='mct'>Würzburg a Füssen</span>
+                <br />
                 ¡460 Kilómetros de puro romanticismo!
             </h2>
 
@@ -19,6 +20,16 @@ const Discover = () => {
                 <DiscoverCards cardImg={"5"} spanTitle="Día 5: Halblech" subtitle="Halblech / Buchenberg / Hohenschwangau / Neuschwanstein / Halblech (117 Km)" text="Subida en telesilla al monte Buchenberg por la mañana para admirar las maravillosas vistas que regala desde la cima. Por la tarde, visita al castillo de Hohenschwangau y de Neuschwanstein, que sirvió de inspiración para el palacio del cuento de La Cenicienta de Disney. Continuaremos hacia Halblech un paraíso entre castillos y lagos." loc="Halblech." />
                 <DiscoverCards cardImg={"6"} spanTitle="Día 6: De Halblech a Barcelona" subtitle="Halblech - Füssen / Múnich (130 Km) / Barcelona" text="Por la mañana, visita Füssen, ciudad a orillas del río Lech, al pie de los Alpes, y un final perfecto que resume los 413 km entre el Meno y los Alpes, impresionantes paisajes, senderos, montañas, lagos, castillos y su centro histórico… A continuación, traslado al aeropuerto de Múnich, devolución del coche de alquiler y vuelo de regreso a Barcelona"/>
             </article>
+
+            <div>
+                <p>*Posibilidad de añadir mas noches.</p>
+                <p>**Constultar salidas desde otras ciudades.</p>
+            </div>
+
+            <div className='warning__container'>
+                <b>¡Atención!</b>
+                <p>No utilizar durante el viaje por la Ruta Romántica ningún instrumento de navegación, ya que no funcionan correctamente, y la gente se pierde.</p>
+            </div>
         </section>
     )
 }
