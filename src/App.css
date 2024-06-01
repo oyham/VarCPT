@@ -103,6 +103,10 @@ ol {
   border: 1px solid red;
 }
 
+.link__acc-user{
+  display: none;
+}
+
 .login__link {
  background-color: #555;
  width: 100%;
@@ -316,10 +320,18 @@ ol {
     /* gap: 1rem; */
   }
 
+  .nav__link i{
+    display: none;
+  }
+
   .link__acc {
     position: absolute;
     top: 3rem;
     right: 3rem;
+  }
+
+  .link__acc-user i{
+    display: block;
   }
   .nav__toggle {
     display: none;
@@ -348,7 +360,7 @@ ol {
     color: #000;
   }
 
-  .nav__place-link span:nth-child(2){
+  .nav__place-link span:nth-child(3){
     display: none;
   }
 
@@ -368,8 +380,11 @@ ol {
     padding: 0;
   }
 
+  
+
   .nav__ul{
     display: flex;
+    gap: 1.8rem;
   }
 
   .img__nav-logo {

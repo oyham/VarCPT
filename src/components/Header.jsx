@@ -15,9 +15,10 @@ const Header = () => {
                         <li className="nav-item link__acc">
                             <Link
                                 href="/"
-                                className="nav__link"
+                                className="nav__link link__acc-user"
                                 onClick={toggleMenu}
                             >
+                                <i className="ri-user-line"></i>
                                 Mi Cuenta
                             </Link>
                             <Link
@@ -80,6 +81,56 @@ const Header = () => {
                                     >
                                         <i className="ri-arrow-right-s-fill"></i>
                                         Cruceros
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        <i className="ri-arrow-right-s-fill"></i>
+                                        Caribe
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        <i className="ri-arrow-right-s-fill"></i>
+                                        Circuitos
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        <i className="ri-arrow-right-s-fill"></i>
+                                        Islas
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        <i className="ri-arrow-right-s-fill"></i>
+                                        Ofertas
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="nav__link"
+                                        onClick={toggleMenu}
+                                    >
+                                        <i className="ri-arrow-right-s-fill"></i>
+                                        Viajes Exclusivos
                                     </Link>
                                 </li>
                             </ul>
