@@ -85,6 +85,10 @@ h1 {
   width: 50%;
 }
 
+.main__section {
+  border-bottom: 1px solid black;
+}
+
 ul,
 ol {
   padding: 0.5rem;
@@ -264,6 +268,14 @@ ol {
   height: auto;
 }
 
+/* CARDS */
+.cards__container {
+  margin: 1rem 2rem;
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   .navbar-nav {
     position: fixed;
@@ -346,7 +358,7 @@ ol {
     right: 0;
   }
 
-  .main__section h2{
+  .main__section h2 {
     font-size: 2rem;
     color: black;
   }
@@ -368,6 +380,14 @@ ol {
 
   .link__acc a:hover {
     color: #000;
+  }
+
+  /* CARDS */
+  .cards__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Establece columnas automáticas con un ancho mínimo de 300px */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin: 0 6rem;
   }
 
   /* Nav */

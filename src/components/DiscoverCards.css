@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.card__img-container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.card__img-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card__img-container span {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.card__info-container{
+    background-color: #f3c50e;
+    text-align: start;
+    padding: 1rem 1.5rem;
+    height: 100%;
+}
+
+@media screen and (min-width: 1118px) {
+    .card{
+        min-height: 80vh;
+    }
+}

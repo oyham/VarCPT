@@ -1,3 +1,4 @@
+import Discover from './Discover'
 import mainIMG from '/mainIMG.jpg'
 import mainLogo from '/vcpt2.jpg'
 const Main = () => {
@@ -25,6 +26,7 @@ const Main = () => {
           </p>
         </div>
       </section>
+      <Discover />
     </main>
   )
 }
