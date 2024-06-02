@@ -1,4 +1,3 @@
-import React from 'react'
 import DiscoverCards from '../components/DiscoverCards'
 
 const Discover = () => {

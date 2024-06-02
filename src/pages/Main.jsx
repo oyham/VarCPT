@@ -1,5 +1,7 @@
 import Discover from "./Discover";
 import Proposal from "./Proposal";
+import Contac from "./Contac";
+
 import mainIMG from "/mainIMG.jpg";
 import mainLogo from "/vcpt2.jpg";
 const Main = () => {
@@ -33,6 +35,7 @@ const Main = () => {
       </section>
       <Discover />
       <Proposal />
+      <Contac />
     </main>
   );
 };
