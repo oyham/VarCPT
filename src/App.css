@@ -48,7 +48,7 @@ h1 {
   margin-bottom: 0.1rem;
 }
 
-.mct{
+.mct {
   color: #f3c50e;
 }
 
@@ -56,16 +56,12 @@ h1 {
   padding-top: 4rem;
 }
 
-
 .main__picture {
   display: block;
   width: 100%;
-  /* Ocupa todo el ancho disponible */
   height: 300px;
-  /* Establece una altura fija de 300px */
   overflow: hidden;
   position: relative;
-  /* Necesaria para que la imagen se posicione correctamente */
   z-index: -10;
 }
 
@@ -73,11 +69,8 @@ h1 {
   object-fit: cover;
   object-position: -25rem center;
   width: 100%;
-  /* La imagen ocupa todo el ancho del contenedor */
   height: 100%;
-  /* La imagen ocupa toda la altura del contenedor */
   position: absolute;
-  /* Asegura que la imagen se ajuste al contenedor */
   top: 0;
   left: 0;
   right: 0;
@@ -154,7 +147,6 @@ ol {
 
 /* NAV */
 @media screen and (max-width: 1118px) {
-
   h1,
   h2,
   h3 {
@@ -205,9 +197,7 @@ ol {
   z-index: 1;
 }
 
-/* ==== NAVBAR por CHATGPT==== */
-
-.navbar-nav {
+/* .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,9 +206,9 @@ ol {
   padding: 0;
   height: 60px;
 }
-
+ */
 .nav-item {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: whitesmoke;
 }
 
@@ -273,7 +263,7 @@ ol {
 }
 
 /* CARDS */
-.discover__title{
+.discover__title {
   margin: 4rem 3rem 0;
 }
 
@@ -281,17 +271,83 @@ ol {
   margin: 1rem 2rem;
 }
 
-.warning__container{
+.warning__container {
   background-color: #f3c50e;
   margin: 0 2rem;
   text-align: start;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.warning__container b{
+.warning__container b {
   font-size: 1.5rem;
 }
 
+/* PROPOSAL */
+.proposal__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proposal__info {
+  background-color: black;
+  color: white;
+  border-bottom: 10px solid #f3c50e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proposal__data h3 {
+  font-size: 1.5rem;
+  color: #f3c50e;
+}
+
+.proposal__data-info {
+  margin-bottom: 0.2rem;
+}
+
+.proposal__price {
+  font-size: 3rem;
+  color: #f3c50e;
+  margin: 0 0.4rem;
+}
+
+.proposal__more-info {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  background-image: url("/public/moreInfoIMG.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.proposal__more-info button {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999 !important;
+  background-color: #f3c50e;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  border-radius: 0px;
+}
+
+.proposal__img-container {
+  margin: 0 auto;
+}
+
+.proposal__img-container img {
+  min-width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .navbar-nav {
@@ -317,7 +373,6 @@ ol {
   .section {
     padding-top: 3rem;
     padding-bottom: 2rem;
-    
   }
 
   .section-title {
@@ -381,10 +436,9 @@ ol {
     color: black;
   }
 
-
-
   .header {
     height: 8.5rem;
+    z-index: 10;
   }
 
   .header__tool {
@@ -401,20 +455,45 @@ ol {
   }
 
   /* CARDS */
-  .cards__container{
+  .cards__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Establece columnas automáticas con un ancho mínimo de 300px */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Establece columnas automáticas con un ancho mínimo de 300px */
     gap: 20px; /* Espacio entre las tarjetas */
     margin: 0 6rem;
   }
 
-  .warning__container{
+  .warning__container {
     margin: 0 4rem;
-
   }
 
+  /* PROPOSAL */
+  .proposal__container {
+    flex-direction: row;
+    gap: 0;
+  }
 
-  
+  .proposal__info,
+  .proposal__more-info {
+    flex: 1; /* Ensures equal width for both children */
+  }
+
+  .proposal__info {
+    border-bottom: none;
+    border-right: 0.5rem solid #f3c50e;
+  }
+
+  .proposal__more-info {
+    height: auto;
+    border-left: 0.5rem solid #f3c50e;
+    z-index: 1;
+  }
+
+  .proposal__img-container img {
+    min-width: 60%;
+  }
 
   /* Nav */
   .nav {
@@ -488,8 +567,6 @@ ol {
   .nav__link {
     padding: 0;
   }
-
-
 
   .nav__ul {
     display: flex;
