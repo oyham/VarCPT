@@ -352,6 +352,7 @@ ol {
 /* CONTACT */
 .contact__container{
  margin: 1rem auto;
+ margin-bottom: 0;
 }
 
 .contact__data{
@@ -360,6 +361,7 @@ ol {
   width: 100%;
   padding: 2rem 0;
 }
+
 
 @media screen and (min-width: 768px) {
   .navbar-nav {
@@ -508,6 +510,14 @@ ol {
   }
 
   /* CONTACT */
+
+  .contact__container{
+    padding-bottom: 0;
+  }
+
+  .contact__data{
+    padding: .7rem;
+  }
 
   /* Nav */
   .nav {
