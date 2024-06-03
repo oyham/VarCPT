@@ -26,6 +26,7 @@ body {
 .i__container {
   display: flex;
   place-items: center;
+  margin-right: 1rem;
 }
 
 img {
@@ -131,6 +132,7 @@ ol {
 
 .nav__place-link i {
   display: none;
+  color: white;
 }
 
 .link__acc {
@@ -155,7 +157,7 @@ ol {
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  text-align: start;
+  text-align: start ;
 }
 
 /* NAV */
@@ -426,7 +428,9 @@ ol {
   }
 
   .nav__place-link{
+    flex-direction: row;
     gap: .5rem;
+    color: #000;
   }
 
   .main__img-container {
