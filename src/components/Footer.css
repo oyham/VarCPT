@@ -94,10 +94,7 @@ form {
     text-decoration: underline;
 }
 
-/* FOOTER IMG */
-.footer__container picture > img {
-    width: 18%;
-}
+
 
 @media screen and (min-width: 1024px) {
   .footer__container {
@@ -158,4 +155,9 @@ form {
     break-inside: avoid;
     padding: 0.2rem 0;
   }
+
+  /* FOOTER IMG */
+.footer__container picture > img {
+    width: 18%;
+}
 }
