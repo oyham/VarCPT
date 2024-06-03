@@ -2,6 +2,7 @@
   --main-color: #fdfdfd;
   --header-color: var(--main-color);
   --header-height: 4.5rem;
+  --color: #f3c50e;
   --max-width: 100%;
 }
 
@@ -133,7 +134,7 @@ ol {
 }
 
 .link__acc {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .link__acc-user {
@@ -142,7 +143,19 @@ ol {
 
 .login__link {
   background-color: #555;
-  width: 100%;
+  color: var(--color);
+}
+
+.nav__link-fav{
+  gap: .5rem;
+  color: var(--color);
+}
+
+.nav__place-link{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: start;
 }
 
 /* NAV */
@@ -217,7 +230,6 @@ ol {
 }
 
 .nav__link {
-  color: var(--title-color);
   font-weight: 600;
   padding: 1.25rem 1.5rem;
   display: flex;
