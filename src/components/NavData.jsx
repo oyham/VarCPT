@@ -15,7 +15,16 @@ const NavData = ({ showMenu, toggleMenu }) => {
       </Link>
 
       <div className="i__container">
-        <i>Icono 2</i>
+        <div>
+          <button className="i__button-contact">
+            <i class="ri-phone-line"></i>
+            <i class="ri-arrow-drop-down-line"></i>
+          </button>
+          <div className="i__number-contact">
+            <span>932 08 70 00</span>
+            <span>Agencias de Viajes</span>
+          </div>
+        </div>
         <div
           className={`nav__toggle ${showMenu ? "show-icon" : ""}`}
           onClick={toggleMenu}

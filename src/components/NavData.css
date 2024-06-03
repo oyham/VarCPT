@@ -49,10 +49,34 @@
     opacity: 0;
 }
 
+.i__button-contact{
+    font-size: 1.5rem;
+}
+
+.i__number-contact{
+    display: none;
+    color: black;
+}
+
 @media screen and (min-width: 1118px) {
     .nav__data{
         height: 6.5rem;
         margin-right: 15rem;
     }
+
+    .i__button-contact{
+        display: none;
+    }
+
+    .i__number-contact{
+        display: flex;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+
+    .i__number-contact span:nth-child(1){
+        font-weight: bold;
+    }
+    
 
 }

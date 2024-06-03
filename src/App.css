@@ -414,6 +414,10 @@ ol {
     width: 40%;
   }
 
+  .nav__place-link{
+    gap: .5rem;
+  }
+
   .main__img-container {
     padding-top: 8.5rem;
   }
@@ -535,7 +539,7 @@ ol {
 
   .link__acc {
     position: absolute;
-    top: 3rem;
+    top: 2.5rem;
     right: 3rem;
   }
 
@@ -567,7 +571,7 @@ ol {
 
   .nav__place {
     position: absolute;
-    top: 3rem;
+    top: 2.5rem;
     right: 10rem;
     color: #000;
   }
